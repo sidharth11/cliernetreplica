@@ -5326,5 +5326,27 @@ footer .f-items .f-item.link li:last-child {
     border-radius: 10px;
     color: #f7f7f7;
     }
+    .main-features .single-item .item {
+      padding: 50px 30px;
+      border: 10px solid #e7e7e7;
+   }
+   .item.my-item {
+    border: 50px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Change border color on hover */
+  .item.my-item:hover {
+    border-color: rgb(37, 171, 149);
+  }
+  
+  /* Additional styling for the item (optional) */
+  .item.my-item {
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white; /* Ensure the background is white or any other color you prefer */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow */
+  }
 }
 
