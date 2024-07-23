@@ -473,9 +473,10 @@ input {
 }
 
 .btn.btn-light.border {
-  background: transparent;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  background: #2b2b5e;
+  border: 2px solid;
+  border-radius: 10px;
+  color: #f7f7f7;
 }
 
 .btn.btn-light.border:hover {
@@ -486,12 +487,12 @@ input {
 
 .btn-dark:hover, 
  .btn-dark:focus {
-  color: #002359 !important;
+  color: #2b2b5e !important;
   background: transparent;
 }
 
 .bg-dark {
-  background: #002359 none repeat scroll 0 0;
+  background: #2b2b5e none repeat scroll 0 0;
 }
 
 .btn-theme {
@@ -1608,7 +1609,7 @@ body,
 }
 
 .banner-area.video-info .info h2 {
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 500;
     margin-bottom: 40px;
     letter-spacing: 1px;
@@ -2153,7 +2154,7 @@ body,
 
 .main-features .single-item .item {
     padding: 50px 30px;
-    border: 2px solid #e7e7e7;
+    border: 10px solid #e7e7e7;
 }
 
 .main-features .single-item .item img {
@@ -5243,5 +5244,87 @@ footer .f-items .f-item.link li:last-child {
   width: calc(100% - 230px);
   background: #fff;
 }
+.banner-area {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.my-item{
+  background: #fff;
+  text-align: center;
+  border: 20px solid transparent;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: relative;
+  border-radius: 8px;
+}
+.my-item h4{
+  color: #183b70;
+}
+.my-item p{
+  color: #50555c;
+}
+.item-dark{
+  background: #2b2b5e;
+}
+.tab-content-info{
+  padding: 50px 50px 30px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(100% - 230px);
+  flex: 0 0 calc(100% - 230px);
+  width: calc(100% - 230px);
+  background: #fff;
+}
+.banner-area {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item.my-item {
+  border: 50px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+/* Change border color on hover */
+.item.my-item:hover {
+  border-color: rgb(37, 171, 149);
+}
+
+/* Additional styling for the item (optional) */
+.item.my-item {
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: white; /* Ensure the background is white or any other color you prefer */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow */
+}
+@media (max-width: 768px) {
+  .banner-area.video-info .info h2 {
+    font-size: 30px;
+    margin-top: -30px;
+  }
+  .btn.btn-light.border {
+    background: #2b2b5e;
+    border: 2px solid;
+    border-radius: 10px;
+    color: #f7f7f7;
+    }
+}
 
